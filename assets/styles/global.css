@@ -16,6 +16,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 12px;
 }
 
 header nav ul {
