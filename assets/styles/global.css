@@ -4,6 +4,7 @@
     --title-primary-color: #f5f5f7;
     --subtitle-color: #6e6e73;
     --action-color: #2997ff;
+    --spirited-main-color: #ded2b9;
 }
 
 header {
@@ -34,8 +35,20 @@ header nav ul li {
     list-style: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 main section {
     text-align: center;
+    position: relative;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
 }
 
 main .main-section h1 {
@@ -77,7 +90,46 @@ main .main-section .text-wrapper {
     margin-top: 51px;
 }
 
-main .main-section img {
-    width: 100%;
-    height: auto;
+main .spirited-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
+
+main .spirited-section > div:last-child {
+    bottom: 50px;
+}
+
+main .spirited-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60%;
+}
+
+main .spirited-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--spirited-main-color);
+    letter-spacing: -0.6px;
+}
+
+main .spirited-section p {
+    color: var(--title-primary-color);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.11px;
+}
+
+main .spirited-section span {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
+}
+
+
